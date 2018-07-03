@@ -14,9 +14,9 @@ class TokenTester {
         System.out.println("Token 3: " + st1.nextToken());
         
         String quote2 = "RHT@75.00@0.22";
-        st2 = new StringTokenizer(quote2);
+        st2 = new StringTokenizer(quote2, "@");
         System.out.println("\nToken 1: " + st2.nextToken());
-        System.out.println("\nToken 2: " + st2.nextToken());
-        System.out.println("\nToken 3: " + st2.nextToken());
+        System.out.println("Token 2: " + st2.nextToken());
+        System.out.println("Token 3: " + st2.nextToken());
     }
 }
